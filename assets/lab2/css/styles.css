@@ -1,0 +1,30 @@
+/*Рамка в таблице*/
+/*table, tr, td {
+    border: 1px solid black;
+}*/
+
+table {
+    height: auto;
+    width: 100%;
+}
+
+/* Логотип */
+.logo {
+    padding: 10px;
+    width: 25%;
+}
+
+/*Заголовок*/
+.head {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    font: small-caps bold 40px/1.5 Arial, sans-serif;
+}
+
+.counter {
+    height: auto;
+    width: 108px;
+    padding: 10px;
+}
+
