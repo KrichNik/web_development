@@ -1,7 +1,7 @@
 /*Рамка в таблице*/
-/*table, tr, td {
+table, tr, td {
     border: 1px solid black;
-}*/
+}
 
 /*Заголовок*/
 .header {
