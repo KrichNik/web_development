@@ -3,18 +3,19 @@
     border: 1px solid black;
 }*/
 
-table {
+/*Заголовок*/
+.header {
     height: auto;
     width: 100%;
 }
 
-/* Логотип */
+/* Главный логотип сайта*/
 .logo {
     padding: 10px;
     width: 25%;
 }
 
-/*Заголовок*/
+/*Название в заголовке*/
 .head {
     padding: 10px;
     text-align: left;
@@ -22,9 +23,55 @@ table {
     font: small-caps bold 40px/1.5 Arial, sans-serif;
 }
 
-.counter {
+/*Ячейка таблицы для счетчиков*/
+td.counter {
     height: auto;
-    width: 108px;
+    width: 110px;
+}
+
+/*Счетчики*/
+div.counter {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Меню*/
+table.menu {
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 10px;
 }
+
+/*Ячейки для ссылок меню*/
+td.menu {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Ссылки в меню*/
+td a:link, td a:visited {
+    text-decoration: none;
+    color: black;
+    font: small-caps 20px/1.5 Arial, sans-serif;
+}
+
+.main {
+    height: 100px;
+    width: 100%;
+}
+
+td.content {
+    height: auto;
+    width: 66%;
+}
+
+td.submenu {
+    height: auto;
+    width: 34%;
+}
+
+
 

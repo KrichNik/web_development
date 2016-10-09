@@ -7,55 +7,64 @@
     <title>Главная страница</title>
 </head>
 <body>
-    <table>
+    <table class="header">
         <tr>
             <td class="logo"><img src="assets/lab2/img/brabus%20logo%202.png"></td>
             <td class="head"><h1>Выбор и продажа автомобилей в Украине</h1></td>
             <td class="counter">
-
-                <!--LiveInternet counter--><script type="text/javascript"><!--
-            document.write("<a href='//www.liveinternet.ru/click' "+
-                "target=_blank><img src='//counter.yadro.ru/hit?t11.6;r"+
-                escape(document.referrer)+((typeof(screen)=="undefined")?"":
-                ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-                    screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-                ";"+Math.random()+
-                "' alt='' title='LiveInternet: показано число просмотров за 24"+
-                " часа, посетителей за 24 часа и за сегодня' "+
-                "border='0' width='88' height='31'><\/a>")
-            //--></script><!--/LiveInternet-->
-
-                <!-- HotLog -->
-                <span id="hotlog_counter"></span>
-                <span id="hotlog_dyn"></span>
-                <script type="text/javascript"> var hot_s = document.createElement('script');
-                hot_s.type = 'text/javascript'; hot_s.async = true;
-                hot_s.src = 'http://js.hotlog.ru/dcounter/2537974.js';
-                hot_d = document.getElementById('hotlog_dyn');
-                hot_d.appendChild(hot_s);
-                </script>
-                <noscript>
-                    <a href="http://click.hotlog.ru/?2537974" target="_blank">
-                        <img src="http://hit19.hotlog.ru/cgi-bin/hotlog/count?s=2537974&im=357" border="0"
-                             title="HotLog" alt="HotLog"></a>
-                </noscript>
-                <!-- /HotLog -->
-
-
+                <div class="counter">
+                    <!--LiveInternet counter--><script type="text/javascript"><!--
+                document.write("<a href='//www.liveinternet.ru/click' "+
+                    "target=_blank><img src='//counter.yadro.ru/hit?t11.6;r"+
+                    escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                    ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                    ";"+Math.random()+
+                    "' alt='' title='LiveInternet: показано число просмотров за 24"+
+                    " часа, посетителей за 24 часа и за сегодня' "+
+                    "border='0' width='88' height='31'><\/a>")
+                //--></script><!--/LiveInternet-->
+                </div>
+                <div class="counter">
+                    <!-- HotLog -->
+                    <span id="hotlog_counter"></span>
+                    <span id="hotlog_dyn"></span>
+                    <script type="text/javascript"> var hot_s = document.createElement('script');
+                    hot_s.type = 'text/javascript'; hot_s.async = true;
+                    hot_s.src = 'http://js.hotlog.ru/dcounter/2537974.js';
+                    hot_d = document.getElementById('hotlog_dyn');
+                    hot_d.appendChild(hot_s);
+                    </script>
+                    <noscript>
+                        <a href="http://click.hotlog.ru/?2537974" target="_blank">
+                            <img src="http://hit19.hotlog.ru/cgi-bin/hotlog/count?s=2537974&im=357" border="0"
+                                 title="HotLog" alt="HotLog"></a>
+                    </noscript>
+                    <!-- /HotLog -->
+                </div>
             </td>
         </tr>
+    </table>
+    <table class="menu">
         <tr>
-            <td colspan="3">Меню</td>
+            <td class="menu"><a href="views/lab2/about.html">О компании Brabus</a></td>
+            <td class="menu"><a href="views/lab2/configurator.html">Конфигуратор автомобилей</a></td>
+            <td class="menu"><a href="views/lab2/reviews.html">Автообзоры</a></td>
+            <td class="menu"><a href="views/lab2/resume.html">Резюме администратора</a></td>
+        </tr>
+    </table>
+    <table class="main">
+        <tr>
+            <td class="content">Основное содержимое</td>
+            <td class="submenu">Подменю</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Реклама</td>
         </tr>
         <tr>
-            <td colspan="2">Основное содержимое</td>
-            <td>Подменю</td>
-        </tr>
-        <tr>
-            <td colspan="3">Реклама</td>
-        </tr>
-        <tr>
-            <td colspan="3">С</td>
+            <td>С</td>
         </tr>
     </table>
 </body>
