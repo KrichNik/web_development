@@ -70,17 +70,13 @@ div.counter {
 /*Основное содержимое*/
 .content {
     width: 70%;
+    color: white;
+    font: small-caps 15px/1.5 Arial, sans-serif;
+    text-align: center;
 }
 
-/*Картинки в основном содержимом*/
-.content td {
-    height: 50%;
-    width: 50%;
-    vertical-align: middle;
-    horiz-align: center;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
+.content h1 {
+    font: small-caps 25px/1.5 Arial, sans-serif;
 }
 
 /*Ячейка для вертикального подменю*/

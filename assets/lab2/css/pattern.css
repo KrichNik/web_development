@@ -72,17 +72,6 @@ div.counter {
     width: 70%;
 }
 
-/*Картинки в основном содержимом*/
-.content td {
-    height: 50%;
-    width: 50%;
-    vertical-align: middle;
-    horiz-align: center;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
-}
-
 /*Ячейка для вертикального подменю*/
 .submenu {
     width: 30%;
