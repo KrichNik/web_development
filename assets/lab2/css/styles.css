@@ -1,6 +1,10 @@
-/*Рамка в таблице*/
-table, tr, td {
-    border: 1px solid black;
+/*Рамки в таблице*/
+/*table, tr, td {
+    border: 1px solid white;
+}*/
+
+body {
+    background: black;
 }
 
 /*Заголовок*/
@@ -17,6 +21,7 @@ table, tr, td {
 
 /*Название в заголовке*/
 .head {
+    color: white;
     padding: 10px;
     text-align: left;
     vertical-align: middle;
@@ -37,41 +42,128 @@ div.counter {
 }
 
 /*Меню*/
-table.menu {
+.menu {
     height: 40px;
     width: 100%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     padding: 10px;
 }
 
 /*Ячейки для ссылок меню*/
-td.menu {
+.menu td {
     text-align: center;
     vertical-align: middle;
 }
 
 /*Ссылки в меню*/
-td a:link, td a:visited {
+.menu a:link, .menu a:visited {
     text-decoration: none;
-    color: black;
+    color: white;
     font: small-caps 20px/1.5 Arial, sans-serif;
 }
 
+/*Ячейка для основного содержимого*/
 .main {
-    height: 100px;
+    height: auto;
     width: 100%;
+    margin-top: 10px;
 }
 
-td.content {
+/*Основное содержимое*/
+.content {
     height: auto;
-    width: 66%;
+    width: 70%;
 }
 
-td.submenu {
-    height: auto;
-    width: 34%;
+/*Картинки в основном содержимом*/
+.content td {
+    height: 50%;
+    width: 50%;
+    vertical-align: middle;
+    horiz-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
 }
+
+/*Ячейка для вертикального подменю*/
+.submenu {
+    height: auto;
+    width: 30%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+/*Таблица в вертикальном подменю*/
+.submenu table {
+    height: auto;
+    width: 90%;
+}
+
+/*Ячейки таблицы в подменю*/
+.submenu td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Содержимое ячеек*/
+.submenu p {
+    background: gray;
+    margin: 10px;
+    padding: 5px;
+}
+
+/*Ссылки в подменю*/
+.submenu a:link, .submenu a:visited {
+    text-decoration: none;
+    color: white;
+    font: small-caps 20px/1.5 Arial, sans-serif;
+}
+
+/*Таблица для рекламы*/
+#ad {
+    margin-top: 20px;
+    color: white;
+}
+
+/*На правах рекламы*/
+#ad caption {
+    text-align: left;
+    font: 14px/1.5 Arial, sans-serif;
+    border-top: 1px solid white;
+    padding-top: 5px;
+    margin-top: 3px;
+}
+
+/*Ячейки с рекламой*/
+.adCell td {
+    height: auto;
+    width: 20%;
+    font: bold 40px/1.5 Times New Roman, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid white;
+}
+
+/*Рекламные изображения*/
+.ad img {
+    height: 150px;
+    width: auto;
+}
+
+.copyright p {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.copyright a:link, .copyright a:visited {
+    text-decoration: none;
+    color: white;
+    font: small-caps 15px/1.5 Arial, sans-serif;
+}
+
 
 
 
