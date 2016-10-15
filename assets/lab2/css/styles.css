@@ -34,9 +34,7 @@ td.counter {
 
 /*Счетчики*/
 div.counter {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px 0 10px;
 }
 
 /*Меню*/
@@ -78,9 +76,7 @@ div.counter {
     width: 50%;
     vertical-align: middle;
     horiz-align: center;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
+    padding: 0 3px 3px 3px;
 }
 
 /*Ячейка для вертикального подменю*/
