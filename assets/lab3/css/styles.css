@@ -26,7 +26,7 @@ body {
     float: left;
     width: 67.7%;
     margin-left: 0.7%;
-    padding-top: 4.8%; /*узнать как сделать просто посередине*/
+    padding-top: 4.8%;
     text-align: left;
     color: white;
     font: small-caps bold 40px/1.5 Arial, sans-serif;
@@ -46,7 +46,7 @@ body {
     width: 25%;
     height: 40px;
     text-align: center;
-    padding-top: 0.25%; /*узнать как сделать просто посередине*/
+    padding-top: 0.25%;
     margin: 0.3% 0 0.3% 0;
     border-top: 1px solid white;
     display: inline-block;
@@ -87,9 +87,9 @@ body {
 .ad {
     clear: both;
     *zoom: 1;
-    margin-top: 10px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
+    margin-top: 10px;
 }
 
 .ad-title {
@@ -115,4 +115,16 @@ body {
 
 .artemgram {
     font: bold 32px/1.5 Times New Roman, sans-serif;
+}
+
+.copyright p {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.copyright a:link, .copyright a:visited {
+    text-decoration: none;
+    color: white;
+    font: small-caps 15px/1.5 Arial, sans-serif;
 }
