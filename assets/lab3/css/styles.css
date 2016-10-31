@@ -1,34 +1,41 @@
-/*body {
-    background-color: black;
+body {
     color: white;
-}*/
-
-.header > div {
-    float: left;
-    box-sizing: border-box;
-    height: 192px;
-
-    /*убрать*/
     background-color: black;
 }
 
+.header:before, .header:after {
+    content:"";
+    display: table;
+    box-sizing: border-box;
+}
+.header:after {
+    clear: both;
+}
+.header {
+    clear: both;
+    *zoom: 1;
+}
+
 .logo {
+    float: left;
     width: 25%;
     padding: 8px 0 4px 0;
 }
 
 .title {
+    float: left;
     width: 67.7%;
     margin-left: 0.7%;
-    padding-top: 4.3%; /*узнать как сделать просто посередине*/
+    padding-top: 4.8%; /*узнать как сделать просто посередине*/
     text-align: left;
     color: white;
     font: small-caps bold 40px/1.5 Arial, sans-serif;
 }
 
 .counters {
+    float: right;
     min-width: 100px;
-    width: 6%;
+    width: 5%;
 }
 
 .counters div {
@@ -36,24 +43,20 @@
 }
 
 .menu div {
-    float: left;
     width: 25%;
     height: 40px;
     text-align: center;
     padding-top: 0.25%; /*узнать как сделать просто посередине*/
-    margin: 0.4% 0 0.3% 0;
+    margin: 0.3% 0 0.3% 0;
     border-top: 1px solid white;
-
-    /*убрать*/
-    background-color: black;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .menu div:hover {
     position: relative;
     top: -10px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border: 1px solid white;
 }
 
 .menu a:link, .menu a:visited { /*узнать как заполнить кнопкой весть див*/
@@ -63,58 +66,53 @@
 }
 
 .main-content > div {
-    margin-top: 3px;
-    float: left;
-    width: 33.13%;
-    height: 336px;
-
-    /*background-color: #cccccc;*/
+    display: inline-block;
+    width: 33.1%;
 }
 
 .img-block-middle {
-    margin-left: 0.3%;
-    margin-right: 0.3%;
+    margin: 0 1px 1px 0;
+}
+
+.ad:before, .ad:after {
+    content:"";
+    display: table;
+    box-sizing: border-box;
+}
+
+.ad:after {
+    clear: both;
+}
+
+.ad {
+    clear: both;
+    *zoom: 1;
+    margin-top: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .ad-title {
-    background-color: aqua;
+    text-align: left;
+    font: 14px/1.5 Arial, sans-serif;
+    padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 .ad li {
     float: left;
     width: 20%;
-    height: 238px;
-    padding-left: 4%;
-    border-left: 1px solid black;
-    padding-top: 18px;
-
-    background-color: #cccccc;
+    text-align: center;
 }
 
-.ad-cell2 img{
-    padding-bottom: 500px;
+.ad  li  img {
+    height: 200px;
 }
 
-.ad img {
-    padding: 8px 0 4px 0;
-    height: 180px;
-}
-
-.ad-cell2 img {
-    padding-left: 6%;
+#ad-cell2 img {
     height: 160px;
-    padding-top: auto;
 }
 
 .artemgram {
-    font: bold 37px/1.5 Times New Roman, sans-serif;
+    font: bold 32px/1.5 Times New Roman, sans-serif;
 }
-
-
-
-
-
-
-
-
-
