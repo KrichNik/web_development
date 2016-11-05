@@ -1,141 +1,145 @@
-/*Рамки в таблице*/
-/*table, tr, td {
-    border: 1px solid white;
-}*/
-
 body {
-    background: black;
-}
-
-/*Заголовок*/
-.header {
-    width: 100%;
-}
-
-/* Главный логотип сайта*/
-.logo {
-    padding: 10px;
-    width: 25%;
-}
-
-/*Название в заголовке*/
-.head {
     color: white;
-    padding: 10px;
+    background-color: black;
+}
+
+.header:before, .header:after,
+.main-block:before, .main-block:after {
+    content:"";
+    display: table;
+    box-sizing: border-box;
+}
+
+.header:after,
+.main-block:after {
+    clear: both;
+}
+
+.header,
+.main-block {
+    clear: both;
+    *zoom: 1;
+}
+
+.header > div {
+    float: left;
+}
+
+.logo {
+    width: 25%;
+    padding: 8px 0 4px 0;
+}
+
+.title {
+    width: 67.7%;
+    margin-left: 0.7%;
+    padding-top: 4.8%;
     text-align: left;
-    vertical-align: middle;
+    color: white;
     font: small-caps bold 40px/1.5 Arial, sans-serif;
 }
 
-/*Ячейка таблицы для счетчиков*/
-td.counter {
-    width: 110px;
+.counters {
+    min-width: 100px;
+    width: 5%;
 }
 
-/*Счетчики*/
-div.counter {
-    padding: 10px 10px 0 10px;
+.counters div {
+    margin: 5px 0 0 5px;
 }
 
-/*Меню*/
-.menu {
+.menu div {
+    width: 25%;
     height: 40px;
-    width: 100%;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding: 10px;
-}
-
-/*Ячейки для ссылок меню*/
-.menu td {
     text-align: center;
-    vertical-align: middle;
+    padding-top: 0.25%;
+    margin: 0.3% 0 0 0;
+    border-top: 1px solid white;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
-/*Ссылки в меню*/
+.selected-menu {
+    position: relative;
+    top: -10px;
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.menu-button:hover {
+    position: relative;
+    top: -10px;
+    border: 1px solid white;
+}
+
 .menu a:link, .menu a:visited {
     text-decoration: none;
     color: white;
     font: small-caps 20px/1.5 Arial, sans-serif;
 }
 
-/*Ячейка для основного содержимого*/
-.main {
-    width: 100%;
-    margin-top: 10px;
-}
-
-/*Основное содержимое*/
-.content {
-    width: 70%;
-    color: white;
-    font: small-caps 15px/1.5 Arial, sans-serif;
-    text-align: center;
-}
-
-.content h1 {
-    font: small-caps bold 25px/1.5 Arial, sans-serif;
-}
-
-/*Ячейка для вертикального подменю*/
-.submenu {
-    width: 30%;
-    padding-top: 30px;
-    padding-left: 40px;
-}
-
-/*Таблица в вертикальном подменю*/
-.submenu table {
-    width: 90%;
-}
-
-/*Ячейки таблицы в подменю*/
-.submenu td {
-    text-align: center;
-    vertical-align: middle;
-}
-
-/*Содержимое ячеек*/
-.submenu p {
-    background: gray;
-    margin: 10px;
-    padding: 5px;
-}
-
-/*Ссылки в подменю*/
-.submenu a:link, .submenu a:visited {
-    text-decoration: none;
-    color: white;
-    font: small-caps 20px/1.5 Arial, sans-serif;
-}
-
-/*Таблица для рекламы*/
-#ad {
+.main-block {
     margin-top: 20px;
-    color: white;
+    text-align: center;
+    font: small-caps 20px/1.5 Arial, sans-serif;
+    border-top: 1px solid white;
 }
 
-/*На правах рекламы*/
-#ad caption {
+.img {
+    float: left;
+    width: 50%;
+    padding-left: 13%;
+    padding-top: 20px;
+}
+
+.text {
+    float: right;
+    width: 50%;
+    padding-right: 17%;
+    margin-top: 75px;
+}
+
+.ad:before, .ad:after {
+    content:"";
+    display: table;
+    box-sizing: border-box;
+}
+
+.ad:after {
+    clear: both;
+}
+
+.ad {
+    clear: both;
+    *zoom: 1;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 15px;
+}
+
+.ad-title {
     text-align: left;
     font: 14px/1.5 Arial, sans-serif;
-    border-top: 1px solid white;
     padding-top: 5px;
-    margin-top: 3px;
+    margin-bottom: 5px;
 }
 
-/*Ячейки с рекламой*/
-.adCell td {
+.ad li {
+    float: left;
     width: 20%;
-    font: bold 40px/1.5 Times New Roman, sans-serif;
     text-align: center;
-    vertical-align: middle;
-    border-bottom: 1px solid white;
 }
 
-/*Рекламные изображения*/
-.ad img {
-    height: 150px;
+.ad  li  img {
+    height: 200px;
+}
+
+#ad-cell2 img {
+    height: 160px;
+}
+
+.artemgram {
+    font: bold 32px/1.5 Times New Roman, sans-serif;
 }
 
 .copyright p {
@@ -149,7 +153,3 @@ div.counter {
     color: white;
     font: small-caps 15px/1.5 Arial, sans-serif;
 }
-
-
-
-
