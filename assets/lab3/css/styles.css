@@ -26,7 +26,7 @@ body {
 }
 
 .title {
-    width: 67.7%;
+    width: 68.2%;
     margin-left: 0.7%;
     padding-top: 4.8%;
     text-align: left;
@@ -99,7 +99,7 @@ body {
 .news-title {
     width: 40%;
     color: black;
-    font: small-caps bold 38px/1.5 Arial, sans-serif;
+    font: small-caps bold 40px/1.5 Arial, sans-serif;
     margin-top: 50px;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .news-text {
-    font: small-caps 17px/1.5 Arial, sans-serif;
+    font: small-caps 20px/1.5 Arial, sans-serif;
     width: 60%;
     padding-right: 10px;
 }

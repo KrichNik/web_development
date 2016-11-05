@@ -3,15 +3,20 @@ body {
     background-color: black;
 }
 
-.header:before, .header:after {
+.header:before, .header:after,
+.main-block:before, .main-block:after {
     content:"";
     display: table;
     box-sizing: border-box;
 }
-.header:after {
+
+.header:after,
+.main-block:after {
     clear: both;
 }
-.header {
+
+.header,
+.main-block {
     clear: both;
     *zoom: 1;
 }
@@ -54,7 +59,14 @@ body {
     box-sizing: border-box;
 }
 
-.menu div:hover {
+.selected-menu {
+    position: relative;
+    top: -10px;
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.menu-button:hover {
     position: relative;
     top: -10px;
     border: 1px solid white;
@@ -64,6 +76,33 @@ body {
     text-decoration: none;
     color: white;
     font: small-caps 20px/1.5 Arial, sans-serif;
+}
+
+.main-block {
+    margin-top: 5px;
+    text-align: center;
+    font: small-caps 20px/1.5 Arial, sans-serif;
+}
+
+.brabus-title {
+    margin-bottom: 15px;
+    font: small-caps bold 40px/1.5 Arial, sans-serif;
+}
+
+.text1, .text3, .img2 {
+    float: left;
+    width: 50%;
+    padding-left: 11%;
+}
+
+.img1, .img3, .text2 {
+    float: right;
+    width: 50%;
+    padding-right: 5%;
+}
+
+.text1, .text2, .text3 {
+    margin-top: 65px;
 }
 
 .ad:before, .ad:after {
