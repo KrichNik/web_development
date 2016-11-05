@@ -66,53 +66,6 @@ body {
     font: small-caps 20px/1.5 Arial, sans-serif;
 }
 
-.main-content > div {
-    display: inline-block;
-    width: 33.1%;
-}
-
-.img-block-middle {
-    margin: 0 1px 1px 0;
-}
-
-.news-container:before, .news-container:after {
-    content:"";
-    display: table;
-    box-sizing: border-box;
-}
-.news-container:after {
-    clear: both;
-}
-.news-container {
-    clear: both;
-    *zoom: 1;
-    margin: 15px 0 20px 0;
-    padding: 10px 0 10px 0;
-    background: #000000;
-    background: linear-gradient(to right, #B8B8B8, #424242, #000000 65%);
-}
-
-.news-container > div {
-    float: left;
-}
-
-.news-title {
-    width: 40%;
-    color: black;
-    font: small-caps bold 38px/1.5 Arial, sans-serif;
-    margin-top: 50px;
-}
-
-.news-title > p {
-    padding-left: 20px;
-}
-
-.news-text {
-    font: small-caps 17px/1.5 Arial, sans-serif;
-    width: 60%;
-    padding-right: 10px;
-}
-
 .ad:before, .ad:after {
     content:"";
     display: table;
