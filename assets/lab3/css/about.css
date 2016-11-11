@@ -79,30 +79,49 @@ body {
 }
 
 .main-block {
-    margin-top: 5px;
-    text-align: center;
+    margin-top: 10px;
     font: small-caps 20px/1.5 Arial, sans-serif;
-}
-
-.brabus-title {
-    margin-bottom: 15px;
-    font: small-caps bold 40px/1.5 Arial, sans-serif;
 }
 
 .text1, .text3, .img2 {
     float: left;
-    width: 50%;
-    padding-left: 11%;
 }
 
 .img1, .img3, .text2 {
     float: right;
-    width: 50%;
-    padding-right: 5%;
 }
 
-.text1, .text2, .text3 {
-    margin-top: 65px;
+.brabus-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font: small-caps bold 40px/1.5 Arial, sans-serif;
+}
+
+.text1 {
+    width: 43%;
+    margin: 3% 0 0 5%;
+}
+
+.img1 {
+    margin-right: 7%;
+}
+
+.text2 {
+    width: 42%;
+    margin: 2% 4% 0 0;
+}
+
+.img2 {
+    margin-left: 5%;
+}
+
+.text3 {
+    width: 45%;
+    margin: 7% 0 0 5%;
+}
+
+.img3 {
+    margin: 2% 7% 2% 0;
 }
 
 .ad:before, .ad:after {
