@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS lab</title>
+</head>
+
+<body>
+
+<!--Задание 1-->
+<form class="" action="">
+    <p>Kоличество часов и минут с момента начала месяца: </p>
+    <input type="text" name="name" value="" id="text" title=""><br>
+    <input type="reset" name="name" value="Reset" >
+    <input type="submit" name="name" value="Submit" id="submitButton">
+</form>
+
+ <!--Задание 2-->
+<img src="../../assets/lab1/img/2013-brabus-850-shooting-brake.jpg" class="imgClass">
+<br>
+
+<!--Задание 5-->
+<a id="link" href="#">задание e)</a>
+
+<!--Задание 4-->
+<script type="text/javascript">
+    var imgEl = document.querySelector('.imgClass');
+
+    imgEl.addEventListener('mouseover', function () {
+        function mousemove(event) {
+            var x = event.clientX,
+                y = event.clientY;
+            console.log('x = ' + x + ', y = ' + y)
+            }
+        function mouseout() {
+            imgEl.removeEventListener('mousemove', mousemove);
+            imgEl.removeEventListener('mouseout', mouseout)
+            }
+        imgEl.addEventListener('mousemove', mousemove);
+        imgEl.addEventListener('mouseout', mouseout)
+    })
+</script>
+</body>
+<script src="../../assets/lab4/lr4.js"></script>
+</html>
